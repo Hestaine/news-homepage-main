@@ -44,6 +44,11 @@ nav {
   top: 1rem;
   right: 2rem;
   width: 7vw;
+  cursor: pointer;
+}
+
+.menu {
+  cursor: pointer;
 }
 
 nav > p:first-of-type {
@@ -56,9 +61,14 @@ nav > p {
   margin: 0;
 }
 
-/* .hidden {
+nav > p:hover {
+  color: var(--Soft-orange);
+  cursor: pointer;
+}
+
+.hidden {
   display: none;
-} */
+}
 
 .nav {
   display: flex;
@@ -98,6 +108,14 @@ button {
   letter-spacing: 7px;
   font-weight: 400;
   margin-bottom: 4rem;
+}
+
+button:hover {
+  color: var(--Soft-red);
+  background-color: var(--Off-white);
+  border: 1px solid var(--Soft-red);
+  box-shadow: 2px 5px 19px black;
+  cursor: pointer;
 }
 
 .new {
