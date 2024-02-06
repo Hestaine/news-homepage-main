@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   padding: 1.2rem;
-  width: 50vh;
+  width: 40vw;
 }
 
 .hidden {
@@ -34,5 +34,4 @@
 }
 
 .main-img {
-  width: 10vw;
 }
