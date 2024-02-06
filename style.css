@@ -132,7 +132,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  justify-content: flex-start;
+  width: 60vw;
 }
 
 .tab-h2 {
@@ -149,6 +149,36 @@ button {
   line-height: 1.6rem;
 }
 
-.tab-description {
-  width: 60vw;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 70vw;
+    margin: 1rem auto;
+  }
+  .tab-description {
+    gap: 2rem;
+  }
+  .tab-img {
+    width: 30vw;
+  }
+  .tab-h3 {
+    font-size: 1.8rem;
+  }
+  .tab-p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  .tab-description {
+    gap: 3rem;
+  }
+  .new-tab {
+    gap: 2rem;
+  }
+  .tab-description {
+    gap: 1.2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    display: grid;
+  }
 }
