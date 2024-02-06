@@ -9,6 +9,7 @@
   --Very-dark-blue: hsl(240, 100%, 5%);
 }
 
+/* default styling */
 * {
   margin: 0;
   padding: 0;
@@ -20,9 +21,10 @@
   display: flex;
   flex-direction: column;
   padding: 1.2rem;
-  width: 99vw;
+  width: 100vw;
 }
 
+/* nav style */
 .hidden {
   display: none;
 }
@@ -31,7 +33,78 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin: 0.7rem 0 2.5rem 0;
 }
 
+/* main style */
 .main-img {
+  margin-bottom: 2rem;
+}
+
+.bright {
+  color: var(--Very-dark-blue);
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.description-text {
+  color: var(--Dark-grayish-blue);
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: var(--Soft-red);
+  color: var(--Off-white);
+  outline: 0;
+  border: 0;
+  padding: 1rem 2.2rem;
+  font-size: 1.4rem;
+  letter-spacing: 7px;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+.new {
+  background-color: var(--Very-dark-blue);
+  color: var(--Off-white);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.new-description {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+
+.line {
+  background-color: var(--Grayish-blue);
+  height: 0.1px;
+}
+
+.new-h2 {
+  color: var(--Soft-orange);
+}
+
+.new-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.new-h3 {
+  font-size: 1.7rem;
+}
+
+.new-text {
+  color: var(--Grayish-blue);
+  font-size: 21px;
+  line-height: 2rem;
 }
