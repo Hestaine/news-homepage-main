@@ -51,6 +51,14 @@ nav {
   cursor: pointer;
 }
 
+.blurred {
+  filter: blur(5px);
+}
+
+.selected {
+  filter: none;
+}
+
 nav > p:first-of-type {
   margin-top: 6rem;
 }

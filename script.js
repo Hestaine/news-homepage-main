@@ -6,5 +6,5 @@ const container = document.querySelector(".container");
 
 menuBtn.addEventListener("click", (e) => {
   nav.classList.remove("hidden");
-  container.style.filter : blur(5px);
+  container.classList.add("blurred");
 });
