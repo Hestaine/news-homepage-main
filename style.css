@@ -22,12 +22,43 @@
   flex-direction: column;
   padding: 1.2rem;
   width: 100vw;
+  position: relative;
 }
 
 /* nav style */
-.hidden {
-  display: none;
+
+nav {
+  position: absolute;
+  background-color: var(--Off-white);
+  width: 70vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  padding: 2rem;
+  gap: 1rem;
 }
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  width: 7vw;
+}
+
+nav > p:first-of-type {
+  margin-top: 6rem;
+}
+
+nav > p {
+  color: var(--Very-dark-blue);
+  font-weight: 400;
+  margin: 0;
+}
+
+/* .hidden {
+  display: none;
+} */
 
 .nav {
   display: flex;
@@ -177,7 +208,7 @@ button {
     gap: 1.2rem;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .container {
     display: grid;
   }
