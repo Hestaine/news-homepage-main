@@ -148,3 +148,7 @@ button {
   font-size: 0.9rem;
   line-height: 1.6rem;
 }
+
+.tab-description {
+  width: 60vw;
+}
