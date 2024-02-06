@@ -125,6 +125,7 @@ button {
 
 .tab-img {
   width: 29vw;
+  height: 27vh;
 }
 
 .tab-description {
@@ -136,4 +137,8 @@ button {
 .tab-h2 {
   font-size: 2.5rem;
   color: var(--Grayish-blue);
+}
+
+.tab-h3 {
+  font-size: 1.5rem;
 }
