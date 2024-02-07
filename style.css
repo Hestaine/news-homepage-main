@@ -34,9 +34,12 @@ nav {
   height: 100%;
   display: flex;
   flex-direction: column;
+  top: 0;
   right: 0;
   padding: 2rem;
   gap: 1rem;
+  z-index: 10;
+  transition: all 0.8s ease-in-out;
 }
 
 .close {
@@ -51,12 +54,16 @@ nav {
   cursor: pointer;
 }
 
-.blurred {
-  filter: blur(5px);
-}
-
-.selected {
-  filter: none;
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  transition: opacity 0.8s ease;
 }
 
 nav > p:first-of-type {
@@ -197,6 +204,11 @@ button:hover {
   color: var(--Grayish-blue);
 }
 
+.tab-h2:hover {
+  color: var(--Soft-orange);
+  cursor: pointer;
+}
+
 .tab-h3 {
   font-size: 1.1rem;
 }
@@ -237,5 +249,21 @@ button:hover {
 @media screen and (min-width: 1024px) {
   .container {
     display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+  }
+  .menu {
+    display: none;
+  }
+  nav {
+    display: flex;
+  }
+  .nav {
+    grid-column: 1 / 10;
+    grid-row: 1 / 3;
+  }
+  .main-img {
+    grid-column: 1 / 6;
+    grid-row: 4 / 7;
   }
 }
