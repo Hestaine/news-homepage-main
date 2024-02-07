@@ -4,6 +4,7 @@ const closeBtn = document.querySelector(".close");
 const nav = document.querySelector("nav");
 const container = document.querySelector(".container");
 const overlay = document.querySelector(".overlay");
+const myImage = document.querySelector("main-img");
 
 menuBtn.addEventListener("click", (e) => {
   nav.classList.remove("hidden");
