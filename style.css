@@ -256,13 +256,9 @@ button:hover {
 }
 @media screen and (min-width: 900px) {
   .container {
-    display: grid;
+    display: flex;
     width: 100vw;
     padding: 1rem 4rem;
-    grid-template-rows: repeat(3, 3fr);
-    grid-template-columns: 1fr repeat(2, 2fr) repeat(2, 1fr) 3;
-    grid-gap: 0;
-    grid-auto-rows: 200px;
   }
   .menu {
     display: none;
@@ -289,19 +285,65 @@ button:hover {
   nav {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     position: inherit;
     height: fit-content;
     transition: none;
     background-color: transparent;
-    width: 10vw;
+    width: 13vw;
   }
   .nav {
     align-items: center;
     width: 70vw;
+    justify-content: start;
+    gap: 51rem;
     height: 5vh;
-    margin: 0;
+  }
+  .joint {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 66vw;
   }
   .desktop-img {
     display: flex;
+    width: 66vw;
+  }
+  .img-text-div {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .read-more {
+    display: flex;
+  }
+  .new {
+    gap: 0.2rem;
+  }
+  .new-description {
+    gap: 1rem;
+  }
+  .new-tab {
+    gap: 0.2rem;
+  }
+  .top-three {
+    flex-direction: row;
+    gap: 0.1rem;
+    width: 70vw;
+  }
+  .tab {
+    width: 40vw;
+  }
+  .tab-img {
+    height: 30vh;
+    width: 9vw;
+  }
+  .tab-h3 {
+    font-size: 1.1rem;
+  }
+  .tab-p {
+    font-size: 1.2rem;
+  }
+  .tab-description {
+    width: 20vw;
   }
 }
